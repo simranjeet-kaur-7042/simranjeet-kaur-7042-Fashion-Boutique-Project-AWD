@@ -1,0 +1,103 @@
+/* CART SIDEBAR */
+.cart-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.cart-sidebar {
+  position: fixed;
+  right: -25rem;
+  top: 0;
+  width: 22rem;
+  height: 100vh;
+  background: #fff;
+  padding: 1.25rem;
+  overflow-y: auto;
+  box-shadow: -0.15rem 0 0.6rem rgba(0,0,0,0.2);
+  transition: 0.3s;
+  z-index: 100;
+}
+
+/* Open Cart */
+#cart-toggle:checked ~ .cart-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cart-toggle:checked ~ .cart-sidebar {
+  right: 0;
+}
+
+/* Close button */
+.close-cart {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1.25rem;
+  text-align: right;
+}
+
+/* Cart items hidden by default */
+.cart-items .cart-item {
+  display: none;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.cart-items img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+}
+
+.cart-details p {
+  margin: 0;
+}
+
+/* Add/Remove buttons */
+.add-to-cart, .remove-btn {
+  display: inline-block;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+/* Show cart items when product checkbox is checked */
+#product1:checked ~ .cart-sidebar .cart-items #cart-item1 {
+  display: flex;
+}
+
+#product2:checked ~ .cart-sidebar .cart-items #cart-item2 {
+  display: flex;
+}
+
+
+
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 50%;
+  font-weight: bold;
+}

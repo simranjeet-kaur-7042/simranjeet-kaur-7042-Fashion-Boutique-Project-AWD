@@ -1,0 +1,108 @@
+/* ===================== CHECKOUT PAGE ===================== */
+
+/* Base font-size for rem scaling */
+html {
+  font-size: 16px; /* 1rem = 16px (browser default) */
+}
+
+.checkout-container {
+  max-width: 40rem; /* ~640px */
+  margin: 6vh auto;
+  padding: 2rem;
+  background: #ffe6f2;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.checkout-container h1 {
+  text-align: center;
+  color: rosybrown;
+  margin-bottom: 1.8rem;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+/* Form Elements */
+.checkout-form label {
+  display: block;
+  margin: 0.6rem 0 0.3rem 0;
+  font-weight: 500;
+  color: #4b3a44;
+  font-size: 1rem;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 0.07rem solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #fff0f5;
+}
+
+.checkout-form textarea {
+  resize: none;
+  height: 6rem;
+}
+
+/* Order Summary Box */
+.order-summary {
+  background: #fff5f7;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-summary p {
+  margin: 0.3rem 0;
+  color: #4b3a44;
+  font-size: 1rem;
+}
+
+/* Button */
+.place-order-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #ff99cc;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.place-order-btn:hover {
+  background: #ff66aa;
+}
+
+/* ===================== RESPONSIVE BREAKPOINTS ===================== */
+
+/* Tablets */
+@media (max-width: 48rem) { /* ~768px */
+  .checkout-container {
+    padding: 1.5rem;
+    margin: 4vh auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 30rem) { /* ~480px */
+  .checkout-container {
+    padding: 1.2rem;
+    margin: 3vh auto;
+  }
+
+  .checkout-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .place-order-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}

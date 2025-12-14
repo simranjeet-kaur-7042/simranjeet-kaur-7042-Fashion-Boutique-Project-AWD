@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Boutique — Customer Styling Consultation</title>
+  <link rel="stylesheet" href="stylefiles/consultation.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logopic.jpg" alt="Heritage Couture Logo" class="logo-img">
+        </a>
+      </div>
+
+      <div>
+        <h1>Fashion Boutique — Free Styling Consultation</h1>
+        <p class="lead">Fill this form and our stylist will suggest outfits, sizes and looks tailored to you.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 style="margin-top:0">Customer Styling Consultation Form</h2>
+          <p class="small">Required fields are marked with <span style="color:var(--accent)">*</span></p>
+
+          <form id="consultForm">
+            <div class="row two">
+              <div>
+                <label for="fullName">Full name <span style="color:var(--accent)">*</span></label>
+                <input id="fullName" name="fullName" type="text" placeholder="e.g. Priya Sharma" required pattern="[A-Za-z\s]{2,50}" title="Please enter a valid name (letters only, 2-50 characters)">
+              </div>
+              <div>
+                <label for="email">Email <span style="color:var(--accent)">*</span></label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+              </div>
+            </div>
+
+            <div class="row two">
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="e.g. +91 9876543210" pattern="^\+?[0-9]{10,13}$" title="Please enter a valid phone number (10-13 digits, can include +)">
+              </div>
+              <div>
+                <label for="budget">Budget Range <span style="color:var(--accent)">*</span></label>
+                <select id="budget" name="budget" required>
+                  <option value="">Select budget</option>
+                  <option value="under2k">Under ₹2,000</option>
+                  <option value="2kto5k">₹2,000 – ₹5,000</option>
+                  <option value="5kto10k">₹5,000 – ₹10,000</option>
+                  <option value="above10k">Above ₹10,000</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div style="flex:1">
+                <label for="occasion">Occasion</label>
+                <input id="occasion" name="occasion" type="text" placeholder="e.g. Wedding, Office, Party" maxlength="50" title="Maximum 50 characters allowed">
+              </div>
+            </div>
+
+            <div class="row">
+              <div style="flex:1">
+                <label for="stylePref">Style Preferences</label>
+                <textarea id="stylePref" name="stylePref" placeholder="Tell us what styles, colors, or brands you love..." maxlength="300" title="Maximum 300 characters allowed"></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <div style="flex:1">
+                <label for="size">Your Size</label>
+                <select id="size" name="size" required>
+                  <option value="">Select size</option>
+                  <option>XS</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                  <option>XXL</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn" type="submit">Submit Consultation Request</button>
+
+            <p id="responseMsg" style="margin-top:10px; font-weight:bold;"></p>
+          </form>
+        </section>
+
+        <section class="card">
+          <h2>Size Guide</h2>
+          <table>
+            <thead>
+              <tr><th>Size</th><th>Bust (inches)</th><th>Waist (inches)</th><th>Hips (inches)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>XS</td><td>30-32</td><td>24-26</td><td>33-35</td></tr>
+              <tr><td>S</td><td>32-34</td><td>26-28</td><td>35-37</td></tr>
+              <tr><td>M</td><td>34-36</td><td>28-30</td><td>37-39</td></tr>
+              <tr><td>L</td><td>36-38</td><td>30-32</td><td>39-41</td></tr>
+              <tr><td>XL</td><td>38-40</td><td>32-34</td><td>41-43</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <section class="card">
+          <h3>About Our Brand</h3>
+          <p class="brand-story">At Fashion Boutique, we craft elegant and sustainable clothing designed to bring confidence and grace to every woman. From everyday essentials to statement pieces, our collection blends comfort and sophistication.</p>
+        </section>
+
+        <img src="categoryimages/saree.jpg" alt="Our Boutique" class="brand-img">
+      </aside>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="scriptfiles/script-consult.js"></script>
+</body>
+</html>

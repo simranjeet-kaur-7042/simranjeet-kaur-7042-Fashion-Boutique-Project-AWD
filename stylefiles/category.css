@@ -1,0 +1,176 @@
+/* CATEGORY HEADER */
+.category-header {
+  text-align: center;
+  font-family: 'Georgia', 'Cambria', 'Times New Roman', serif;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.category-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+}
+
+.category-header p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #555;
+}
+
+/* CATEGORY PAGE */
+.category-page {
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.category-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+}
+
+/* Horizontal scroll row */
+.category-row {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 0.6rem;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
+}
+
+.category-row::-webkit-scrollbar {
+  height: 0.6rem;
+}
+
+.category-row::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 0.3rem;
+}
+
+/* Category item */
+.category-item {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.category-item img {
+  display: block;
+  width: 18rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+  background-color: transparent;
+}
+
+.category-item img:hover {
+  transform: scale(1.05);
+}
+
+.category-label {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* PRODUCT SECTION */
+.product-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1.25rem;
+  max-width: 75rem;
+  margin: auto;
+}
+
+/* Product Card */
+.product-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  border: 0.06rem solid #ddd;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.product-img {
+  max-width: 22rem;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+
+/* Product details */
+.product-details {
+  flex: 1;
+  min-width: 15rem;
+}
+
+.product-details h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.product-details p {
+  font-size: 1.1rem;
+  margin: 0.6rem 0;
+}
+
+.product-details h4 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Size table */
+.size-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0.6rem;
+}
+
+.size-table th,
+.size-table td {
+  border: 0.06rem solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.size-table th {
+  background-color: #f4f4f4;
+}
+
+/* Consultation link */
+.consultation-link {
+  text-align: center;
+  margin: 2rem 0 3rem;
+  font-family: 'Georgia', 'Cambria', serif;
+  color: #333;
+}
+
+.consultation-link p {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.consult-btn {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  background-color: #e91e63;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.consult-btn:hover {
+  background-color: #c2185b;
+}

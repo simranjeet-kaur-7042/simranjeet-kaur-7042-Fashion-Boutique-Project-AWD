@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-width name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Fashion Boutique</title>
+  <link rel="stylesheet" href="stylefiles/styles.css">
+  <link rel="stylesheet" href="stylefiles/category.css">
+  <link rel="stylesheet" href="stylefiles/contact.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="nav-left">
+      <!-- LOGO LEFT SIDE -->
+      <a href="index.html" class="logo">
+        <img src="logopic.jpg" alt="Fashion Boutique Logo" class="logo-img">
+      </a>
+    </div>
+
+    <!-- RIGHT NAV (Links + Icons) -->
+    <div class="nav-right">
+
+      <!-- NAV LINKS -->
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <!-- CATEGORY DROPDOWN -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle-cat-home" />
+        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+        <div class="dropdown-content">
+          <a href="suit.html">Suit</a>
+          <a href="lehnga.html">Lehenga</a>
+          <a href="saree.html">Saree</a>
+          <a href="anarkali.html">Anarkali</a>
+          <a href="gharara.html">Gharara</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+
+      <!-- SEARCH ICON -->
+     <form class="nav-search" onsubmit="return searchProduct()">
+  <input type="text" id="searchInput" placeholder="Search..." required>
+</form>
+
+      
+      <!-- PROFILE DROPDOWN -->
+      <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="icon-img">
+        <div class="dropdown">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Sign Up</a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- CONTACT FORM SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>Have questions or feedback? Fill out the form below and we'll get back to you soon.</p>
+
+      <form id="contactForm" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p id="responseMsg" style="margin-top:10px; font-weight:bold;"></p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER SAME -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>Fashion Boutique</h3>
+        <p>Your one-stop destination for elegant ethnic wear.</p>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact</h3>
+        <p>Email: support@fashionboutique.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: 123 Fashion Street, Mumbai, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Fashion Boutique. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS FILE LINK -->
+  <script src="scriptfiles/script.js"></script>
+  <script src="scriptfiles/search.js"></script>
+
+</body>
+</html>

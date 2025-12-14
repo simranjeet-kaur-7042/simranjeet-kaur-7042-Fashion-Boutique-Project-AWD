@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Boutique - Home</title>
+  <link rel="stylesheet" href="stylefiles/styles.css" />
+  <link rel="stylesheet" href="stylefiles/category.css">
+  <link rel="stylesheet" href="stylefiles/cart.css">
+ 
+
+</head>
+<body>
+  <nav class="navbar">
+
+    <div class="nav-left">
+      <!-- LOGO LEFT SIDE -->
+      <a href="index.html" class="logo">
+        <img src="logopic.jpg" alt="Fashion Boutique Logo" class="logo-img">
+      </a>
+    </div>
+
+    <!-- RIGHT NAV (Links + Icons) -->
+    <div class="nav-right">
+
+      <!-- NAV LINKS -->
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <!-- CATEGORY DROPDOWN -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle-cat-home" />
+        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+        <div class="dropdown-content">
+          <a href="suit.html">Suit</a>
+          <a href="lehnga.html">Lehenga</a>
+          <a href="saree.html">Saree</a>
+          <a href="anarkali.html">Anarkali</a>
+          <a href="gharara.html">Gharara</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+
+
+<form class="nav-search" onsubmit="return searchProduct()">
+  <input type="text" id="searchInput" placeholder="Search..." required>
+</form>
+
+
+
+      <!-- CART ICON -->
+    <label for="cart-toggle" class="nav-icon cart-icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" class="icon-img">
+  <span id="cart-count" class="cart-count">0</span>
+</label>
+
+
+      <!-- PROFILE DROPDOWN -->
+      <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="icon-img">
+        <div class="dropdown">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Sign Up</a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+  
+  <!-- STATIC FRONT IMAGE -->
+<section class="front-image">
+  <div class="image-container">
+    <img src="categoryimages/photo5.jpg" alt="Fashion Boutique Front" class="main-image">
+  </div>
+</section>
+
+
+  <!-- CATEGORY SECTION -->
+  <section class="category-page">
+    <h1>Explore Our Categories</h1>
+
+    <div class="category-slider">
+      <div class="category-track">
+
+        <a href="suit.html" class="category-card">
+          <img src="categoryimages/suit.jpg">
+          <h3>Suit</h3>
+        </a>
+
+        <a href="lehnga.html" class="category-card">
+          <img src="categoryimages/lehnga.jpg">
+          <h3>Lehenga</h3>
+        </a>
+
+        <a href="saree.html" class="category-card">
+          <img src="categoryimages/saree.jpg">
+          <h3>Saree</h3>
+        </a>
+
+        <a href="anarkali.html" class="category-card">
+          <img src="categoryimages/anarkali.jpg">
+          <h3>Anarkali</h3>
+        </a>
+
+        <a href="gharara.html" class="category-card">
+          <img src="categoryimages/gharara.jpg">
+          <h3>Gharara</h3>
+        </a>
+
+        <!-- Duplicate for infinite scrolling -->
+        <a href="suit.html" class="category-card">
+          <img src="categoryimages/suit.jpg">
+          <h3>Suit</h3>
+        </a>
+
+        <a href="lehnga.html" class="category-card">
+          <img src="categoryimages/lehnga.jpg">
+          <h3>Lehenga</h3>
+        </a>
+
+        <a href="saree.html" class="category-card">
+          <img src="categoryimages/saree.jpg">
+          <h3>Saree</h3>
+        </a>
+
+        <a href="anarkali.html" class="category-card">
+          <img src="categoryimages/anarkali.jpg">
+          <h3>Anarkali</h3>
+        </a>
+
+        <a href="gharara.html" class="category-card">
+          <img src="categoryimages/gharara.jpg">
+          <h3>Gharara</h3>
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+
+ 
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>Fashion Boutique</h3>
+      <p>Your one-stop destination for elegant ethnic wear.</p>
+    </div>
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email: support@fashionboutique.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Address: 123 Fashion Street, Mumbai, India</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Fashion Boutique. All rights reserved.
+  </div>
+</footer>
+
+
+  <!-- CART SIDEBAR -->
+<input type="checkbox" id="cart-toggle" hidden>
+
+<div class="cart-overlay"></div>
+
+<div class="cart-sidebar">
+  <label for="cart-toggle" class="close-cart">&times;</label>
+  <h2>Your Cart</h2>
+
+  <div class="cart-items">
+    <!-- Items dynamically added by JS -->
+  </div>
+
+  <p id="cart-total" style="font-weight:bold; margin-top:10px;">Total: ₹0</p>
+
+  <a href="checkout.html">
+    <button class="checkout-btn">Checkout</button>
+  </a>
+</div>
+  <script src="scriptfiles/cart.js"></script>
+  <script src="scriptfiles/search.js"></script>
+
+</body>
+</html>

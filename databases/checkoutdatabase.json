@@ -1,0 +1,24 @@
+{
+  "orders": [
+    {
+      "id": "6836",
+      "name": "Simranjeet Kaur",
+      "email": "Simranjeetkaur@gmail.com",
+      "address": "Rajpura,Pincode-140401",
+      "payment": "cod",
+      "items": [
+        {
+          "name": "Red Designer Suit",
+          "price": 3000,
+          "quantity": 1
+        },
+        {
+          "name": "Bridal Anarkali Suit",
+          "price": 15999,
+          "quantity": 1
+        }
+      ],
+      "orderDate": "11/12/2025, 11:43:31 am"
+    }
+  ]
+}

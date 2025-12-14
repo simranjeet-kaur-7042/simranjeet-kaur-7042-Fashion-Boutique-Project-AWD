@@ -1,0 +1,25 @@
+{
+  "messages": [
+    {
+      "id": "8164",
+      "name": "simran",
+      "email": "simran@gmail.com",
+      "phone": "9876543210",
+      "message": "Nice Collection"
+    },
+    {
+      "id": "46ef",
+      "name": "Kamal",
+      "email": "kamal@gmail.com",
+      "phone": "9638527410",
+      "message": "Trending Designs."
+    },
+    {
+      "id": "e68e",
+      "name": "Diksha",
+      "email": "diksha@gmail.com",
+      "phone": "7418529631",
+      "message": "Awesome designs."
+    }
+  ]
+}

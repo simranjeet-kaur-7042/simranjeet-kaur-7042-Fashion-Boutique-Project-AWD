@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "d887",
+      "firstName": "Simranjeet",
+      "lastName": "Kaur",
+      "email": "simranjeet.4415@gmail.com",
+      "password": "Simran@123"
+    },
+    {
+      "id": "9541",
+      "firstName": "Simranjeet",
+      "lastName": "Kaur",
+      "email": "simranjeet@gmail.com",
+      "password": "Simran@1234"
+    },
+    {
+      "id": "4fcd",
+      "firstName": "Kamalpreet",
+      "lastName": "Kaur",
+      "email": "kamal@gmail.com",
+      "password": "Kamal@123"
+    }
+  ]
+}

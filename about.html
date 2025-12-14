@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Fashion Boutique</title>
+  <link rel="stylesheet" href="stylefiles/styles.css">
+  <link rel="stylesheet" href="stylefiles/category.css">
+</head>
+<body>
+
+ <!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="nav-left">
+      <!-- LOGO LEFT SIDE -->
+      <a href="index.html" class="logo">
+        <img src="logopic.jpg" alt="Fashion Boutique Logo" class="logo-img">
+      </a>
+    </div>
+
+    <!-- RIGHT NAV (Links + Icons) -->
+    <div class="nav-right">
+
+      <!-- NAV LINKS -->
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <!-- CATEGORY DROPDOWN -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle-cat-home" />
+        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+        <div class="dropdown-content">
+          <a href="suit.html">Suit</a>
+          <a href="lehnga.html">Lehenga</a>
+          <a href="saree.html">Saree</a>
+          <a href="anarkali.html">Anarkali</a>
+          <a href="gharara.html">Gharara</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+
+      <!-- SEARCH ICON -->
+      <form class="nav-search" onsubmit="return searchProduct()">
+  <input type="text" id="searchInput" placeholder="Search..." required>
+</form>
+
+      
+      <!-- PROFILE DROPDOWN -->
+      <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="icon-img">
+        <div class="dropdown">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Sign Up</a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-home">
+    <div class="about-container">
+      <h1>About Us</h1>
+      <div class="about-content">
+
+        <div class="about-text">
+          <p>
+            Welcome to <strong>Fashion Boutique</strong> — your one-stop destination for timeless ethnic elegance. 
+            We bring together a curated collection of exquisite sarees, lehengas, suits, and anarkalis that blend 
+            traditional craftsmanship with modern style.
+          </p>
+          <p>
+            Every piece is designed to reflect grace, culture, and individuality — perfect for weddings, festivals, 
+            and everyday celebrations. We take pride in delivering high-quality fabric, impeccable designs, and a 
+            seamless shopping experience for our valued customers.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="categoryimages/showroom.jpg" alt="Fashion Boutique Showroom">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SAME -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>Fashion Boutique</h3>
+        <p>Your one-stop destination for elegant ethnic wear.</p>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact</h3>
+        <p>Email: support@fashionboutique.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: 123 Fashion Street, Mumbai, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Fashion Boutique. All rights reserved.
+    </div>
+  </footer>
+  
+<script src="scriptfiles/search.js"></script>
+</body>
+</html>

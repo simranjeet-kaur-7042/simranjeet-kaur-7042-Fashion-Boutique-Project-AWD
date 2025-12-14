@@ -1,0 +1,14 @@
+{
+  "consultations": [
+    {
+      "id": "75f9",
+      "fullName": "Simranjeet Kaur",
+      "email": "simranjeet@gmail.com",
+      "phone": "9637854210",
+      "budget": "above10k",
+      "occasion": "wedding",
+      "stylePref": "Indo-Western,Pink color,Anarkali Suit.",
+      "size": "L"
+    }
+  ]
+}

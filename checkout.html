@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Boutique - Checkout</title>
+  <link rel="stylesheet" href="stylefiles/styles.css">
+  <link rel="stylesheet" href="stylefiles/checkout.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="nav-left">
+      <!-- LOGO LEFT SIDE -->
+      <a href="index.html" class="logo">
+        <img src="logopic.jpg" alt="Fashion Boutique Logo" class="logo-img">
+      </a>
+    </div>
+
+    <!-- RIGHT NAV (Links + Icons) -->
+    <div class="nav-right">
+
+      <!-- NAV LINKS -->
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <!-- CATEGORY DROPDOWN -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle-cat-home" />
+        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+        <div class="dropdown-content">
+          <a href="suit.html">Suit</a>
+          <a href="lehnga.html">Lehenga</a>
+          <a href="saree.html">Saree</a>
+          <a href="anarkali.html">Anarkali</a>
+          <a href="gharara.html">Gharara</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+
+      <!-- SEARCH ICON -->
+    <form class="nav-search" onsubmit="return searchProduct()">
+  <input type="text" id="searchInput" placeholder="Search..." required>
+</form>
+
+
+      <!-- PROFILE DROPDOWN -->
+      <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="icon-img">
+        <div class="dropdown">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Sign Up</a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- ================= CHECKOUT FORM ================= -->
+  <div class="checkout-container">
+    <h1>Checkout</h1>
+
+    <form id="checkoutForm" class="checkout-form">
+      
+      <label>Full Name</label>
+      <input type="text" id="name" required placeholder="Enter your full name">
+
+      <label>Email</label>
+      <input type="email" id="email" required placeholder="Enter your email">
+
+      <label>Shipping Address</label>
+      <textarea id="address" required placeholder="Enter your address"></textarea>
+
+      <label>Payment Method</label>
+      <select id="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+
+      <h2>Order Summary</h2>
+      <div id="orderSummary" class="order-summary"></div>
+
+      <button type="submit" class="place-order-btn">Place Order</button>
+    </form>
+  </div>
+
+  <script src="scriptfiles/checkout.js"></script>
+<script src="scriptfiles/search.js"></script>
+</body>
+</html>
