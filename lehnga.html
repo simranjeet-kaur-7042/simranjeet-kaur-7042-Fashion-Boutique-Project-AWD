@@ -9,24 +9,15 @@
 <link rel="stylesheet" href="stylefiles/cart.css">
 </head>
 <body id="top">
-
-<!-- NAVBAR -->
   <nav class="navbar">
-
     <div class="nav-left">
-      <!-- LOGO LEFT SIDE -->
       <a href="index.html" class="logo">
         <img src="logopic.jpg" alt="Fashion Boutique Logo" class="logo-img">
       </a>
     </div>
-
-    <!-- RIGHT NAV (Links + Icons) -->
     <div class="nav-right">
-
-      <!-- NAV LINKS -->
       <a href="index.html" class="nav-link active">Home</a>
 
-      <!-- CATEGORY DROPDOWN -->
       <div class="dropdown">
         <input type="checkbox" id="toggle-cat-home" />
         <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
@@ -42,18 +33,13 @@
       <a href="about.html" class="nav-link">About Us</a>
       <a href="contact.html" class="nav-link">Contact Us</a>
 
-      <!-- SEARCH ICON -->
       <form class="nav-search" onsubmit="return searchProduct()">
   <input type="text" id="searchInput" placeholder="Search..." required>
 </form>
-
-      <!-- CART ICON -->
     <label for="cart-toggle" class="nav-icon cart-icon">
   <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" class="icon-img">
   <span id="cart-count" class="cart-count">0</span>
 </label>
-
-      <!-- PROFILE DROPDOWN -->
       <div class="profile">
         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="icon-img">
         <div class="dropdown">
@@ -61,18 +47,13 @@
           <a href="signup.html" class="dropdown-item">Sign Up</a>
         </div>
       </div>
-
     </div>
-
   </nav>
-
-<!-- CATEGORY HEADER -->
 <section class="category-header">
   <h1>Lehenga Collection</h1>
   <p>Stunning and traditional lehengas for every celebration.</p>
 </section>
 
-<!-- PRODUCT SECTION -->
 <section class="product-section">
 
   <div class="product-card">
@@ -122,21 +103,17 @@
       <button class="add-to-cart" data-name="Festive Lehenga" data-price="5999">Add to Cart</button>
     </div>
   </div>
-
 </section>
-
 <section class="back-to-top">
   <a href="#top" class="top-link">↑ Back to Top</a> | 
   <a href="index.html" class="home-link">Back to Home</a>
 </section>
 
-<!-- CUSTOMER CONSULTATION LINK -->
 <section class="consultation-link">
   <p>Need styling advice or help choosing the right fit?</p>
   <a href="consultation.html" class="consult-btn">Book a Styling Consultation</a>
 </section>
 
-<!-- CART SIDEBAR -->
 <input type="checkbox" id="cart-toggle" hidden>
 <div class="cart-overlay"></div>
 <div class="cart-sidebar">

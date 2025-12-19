@@ -1,102 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="stylefiles/styles.css">
-  <!-- Footer CSS is included in external stylesheet -->
-   <style>
-    /* Footer styling */
-    footer {
-      background-color: rgb(247, 222, 226);
-      color: #fff;
-      text-align: center;
-      padding: 90px 0;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    footer .brand {
-      font-weight: bold;
-      font-size: 2em;
-      letter-spacing: 2px;
-      color: #931d45; /* stylish pink accent */
-    }
-  </style>
-</head>
-<body>
-
-<!-- NAVBAR -->
-<!-- NAVBAR -->
-<nav class="navbar">
-
-    <div class="nav-left">
-      <!-- LOGO LEFT SIDE -->
-      <a href="index.html" class="logo">
-        <img src="logopic.jpg" alt="Fashion Boutique Logo" class="logo-img">
-      </a>
-    </div>
-
-    <!-- RIGHT NAV (Links + Icons) -->
-    <div class="nav-right">
-
-      <!-- NAV LINKS -->
-      <a href="index.html" class="nav-link active">Home</a>
-
-      <!-- CATEGORY DROPDOWN -->
-      <div class="dropdown">
-        <input type="checkbox" id="toggle-cat-home" />
-        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
-        <div class="dropdown-content">
-          <a href="suit.html">Suit</a>
-          <a href="lehnga.html">Lehenga</a>
-          <a href="saree.html">Saree</a>
-          <a href="anarkali.html">Anarkali</a>
-          <a href="gharara.html">Gharara</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="stylefiles/styles.css" />
+    <style>
+      footer {
+        background-color: rgb(247, 222, 226);
+        color: #fff;
+        text-align: center;
+        padding: 90px 0;
+        font-family: "Roboto", sans-serif;
+      }
+      footer .brand {
+        font-weight: bold;
+        font-size: 2em;
+        letter-spacing: 2px;
+        color: #931d45;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="logopic.jpg" alt="Fashion Boutique Logo" class="logo-img" />
+        </a>
       </div>
-
-      <a href="about.html" class="nav-link">About Us</a>
-      <a href="contact.html" class="nav-link">Contact Us</a>
-
-      <form class="nav-search" onsubmit="return searchProduct()">
-  <input type="text" id="searchInput" placeholder="Search..." required>
-</form>
-
-      
-      <!-- PROFILE DROPDOWN -->
-      <div class="profile">
-        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="icon-img">
+      <div class="nav-right">
+        <a href="index.html" class="nav-link active">Home</a>
         <div class="dropdown">
-          <a href="login.html" class="dropdown-item">Login</a>
-          <a href="signup.html" class="dropdown-item">Sign Up</a>
+          <input type="checkbox" id="toggle-cat-home" />
+          <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+          <div class="dropdown-content">
+            <a href="suit.html">Suit</a>
+            <a href="lehnga.html">Lehenga</a>
+            <a href="saree.html">Saree</a>
+            <a href="anarkali.html">Anarkali</a>
+            <a href="gharara.html">Gharara</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <form class="nav-search" onsubmit="return searchProduct()">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search..."
+            required
+          />
+        </form>
+        <div class="profile">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            class="icon-img"
+          />
+          <div class="dropdown">
+            <a href="login.html" class="dropdown-item">Login</a>
+            <a href="signup.html" class="dropdown-item">Sign Up</a>
+          </div>
         </div>
       </div>
-
+    </nav>
+    <div class="form-container">
+      <div class="form-box">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" name="email" placeholder="E-mail" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+          <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </form>
+      </div>
     </div>
-
-  </nav>
-<!-- LOGIN FORM -->
-<div class="form-container">
-  <div class="form-box">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="email" name="email" placeholder="E-mail" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-    </form>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <p class="brand">Fashion Boutique</p>
-</footer>
-
-<!-- External JS for validation & fake API -->
-<script src="scriptfiles/login.js"></script>
-<script src="scriptfiles/search.js"></script>
-
-</body>
+    <footer>
+      <p class="brand">Fashion Boutique</p>
+    </footer>
+    <script src="scriptfiles/login.js"></script>
+    <script src="scriptfiles/search.js"></script>
+  </body>
 </html>

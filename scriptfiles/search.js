@@ -1,4 +1,3 @@
-// SEARCH FUNCTION
 function searchProduct() {
   let query = document.getElementById("searchInput").value.toLowerCase();
 
@@ -8,7 +7,7 @@ function searchProduct() {
       break;
 
     case "lehenga":
-    case "lehnga":   // <-- added this
+    case "lehnga":
       window.location.href = "lehnga.html";
       break;
 
@@ -28,5 +27,5 @@ function searchProduct() {
       alert("No results found for '" + query + "'");
   }
 
-  return false; // prevent extra reload
+  return false;
 }

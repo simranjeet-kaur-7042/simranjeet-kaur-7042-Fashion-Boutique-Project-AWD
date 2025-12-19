@@ -8,18 +8,18 @@
       "password": "Simran@123"
     },
     {
-      "id": "9541",
-      "firstName": "Simranjeet",
-      "lastName": "Kaur",
-      "email": "simranjeet@gmail.com",
-      "password": "Simran@1234"
+      "id": "dbb1",
+      "firstName": "Aman",
+      "lastName": "kaur",
+      "email": "aman@gmail.com",
+      "password": "Aman@1234"
     },
     {
-      "id": "4fcd",
-      "firstName": "Kamalpreet",
-      "lastName": "Kaur",
-      "email": "kamal@gmail.com",
-      "password": "Kamal@123"
+      "id": "5380",
+      "firstName": "amol",
+      "lastName": "abc",
+      "email": "amol@gmail.com",
+      "password": "Amol1234@"
     }
   ]
 }

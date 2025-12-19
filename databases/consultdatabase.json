@@ -9,6 +9,16 @@
       "occasion": "wedding",
       "stylePref": "Indo-Western,Pink color,Anarkali Suit.",
       "size": "L"
+    },
+    {
+      "id": "7e30",
+      "fullName": "Kamal",
+      "email": "kamal@gmail.com",
+      "phone": "9874563217",
+      "budget": "2kto5k",
+      "occasion": "Reception",
+      "stylePref": "Beautiful pink color lehenga.",
+      "size": "XL"
     }
   ]
 }

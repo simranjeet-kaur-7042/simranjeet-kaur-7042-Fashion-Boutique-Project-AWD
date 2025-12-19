@@ -1,14 +1,12 @@
-// Load cart from localStorage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
 const orderSummaryDiv = document.getElementById("orderSummary");
 
-// Display cart items in checkout page
+// Display cart items 
 function loadCheckoutItems() {
   orderSummaryDiv.innerHTML = "";
   let total = 0;
 
-  cart.forEach(item => {
+  cart.forEach((item) => {
     const div = document.createElement("p");
     div.textContent = `${item.name} - ₹${item.price} x ${item.quantity}`;
     orderSummaryDiv.appendChild(div);
@@ -23,22 +21,16 @@ function loadCheckoutItems() {
 
 loadCheckoutItems();
 
-// ----------------------
-// Fake API Save Function
-// ----------------------
 async function saveToFakeAPI(orderData) {
   try {
-    const response = await fetch("http://localhost:3000/orders"); // json-server endpoint
+    const response = await fetch("http://localhost:3000/orders"); //get data
     const existingData = await response.json();
-
-    // Add new order
     existingData.push(orderData);
 
-    // Update JSON via PUT (json-server supports POST)
     await fetch("http://localhost:3000/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(orderData)
+      body: JSON.stringify(orderData),
     });
 
     return true;
@@ -49,31 +41,31 @@ async function saveToFakeAPI(orderData) {
   }
 }
 
-// ----------------------
 // Submit Checkout
-// ----------------------
-document.getElementById("checkoutForm").addEventListener("submit", async function(e) {
-  e.preventDefault();
+document
+  .getElementById("checkoutForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-  if (cart.length === 0) {
-    alert("Your cart is empty!");
-    return;
-  }
+    if (cart.length === 0) {
+      alert("Your cart is empty!");
+      return;
+    }
 
-  const order = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    address: document.getElementById("address").value,
-    payment: document.getElementById("payment").value,
-    items: cart,
-    orderDate: new Date().toLocaleString()
-  };
+    const order = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      address: document.getElementById("address").value,
+      payment: document.getElementById("payment").value,
+      items: cart,
+      orderDate: new Date().toLocaleString(),
+    };
 
-  const saved = await saveToFakeAPI(order);
+    const saved = await saveToFakeAPI(order);
 
-  if (saved) {
-    alert("Order placed successfully!");
-    localStorage.removeItem("cart");
-    window.location.href = "index.html";
-  }
-});
+    if (saved) {
+      alert("Order placed successfully!");
+      localStorage.removeItem("cart");
+      window.location.href = "index.html";
+    }
+  });
